@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+    background-color: #F9F9F9;
+}
+
 h1,
 h2,
 h3,
@@ -15,6 +19,8 @@ h4 {
 
 p {
   font-family: "Montserrat", sans-serif;
+
+  /*navbar*/
 }
 .container {
   width: 94.4%;
@@ -36,14 +42,78 @@ p {
   line-height: 22px;
   color: #003f59;
   text-decoration: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .navbar_container a:hover {
-    color: #DE611E;
+  color: #de611e;
 }
 
 .navbar_firstlink {
-    margin-right: 20px;
+  margin-right: 20px;
+}
+
+/*header*/
+
+header {
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 140px 0 0 0;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 78px;
+}
+
+.orange {
+  color: #de611e;
+}
+
+.cyan {
+  color: #007a7a;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  color: #313131;
+}
+
+button {
+    background: #003F59;
+    border-radius: 16px;
+    padding: 16px 32px;
+    border: none;
+    margin-top: 24px;
+    transition: all 0.3s;
+}
+
+button a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #F9F9F9;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #de611e;
+  }
+
+.header_background {
+    position: absolute;
+    top: -30px;
+    z-index: -1;
 }
 
