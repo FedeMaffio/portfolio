@@ -11,13 +11,12 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4 {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-p {
+h2, p {
   font-family: "Montserrat", sans-serif;
 
   /*navbar*/
@@ -117,3 +116,19 @@ button:hover {
     z-index: -1;
 }
 
+.contact_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 267px 0 0 0;
+    
+}
+
+.contact_section h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px; 
+    color: #F9F9F9;
+}
