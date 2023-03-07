@@ -1,0 +1,92 @@
+/*header*/
+
+.header_about_me{
+  background: url(../Assets/fede-su-di-me.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 982px;
+}
+
+/*text container*/
+.about_me_title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 30px;
+  color: #f59e43;
+  margin-bottom: 30px;
+}
+
+.about_me_paragraph {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #f9f9f9;
+}
+
+.text_background {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #007a7a;
+  width: 100%;
+  height: 441px;
+}
+
+.text_container {
+  width: 78.42%;
+  text-align: left;
+}
+
+.graphic_wave {
+  width: 100%;
+  height: auto;
+}
+
+/*skills section*/
+.skills_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 0;
+}
+
+.image_skills {
+  margin: 0 20px 20px 0;
+}
+
+.hobby_text {
+  margin-top: 140px;
+}
+
+/*queries*/
+
+@media (max-width: 1440px) {
+  .header_about_me {
+   height: 784px;
+  }
+}
+
+@media (max-width: 1260px) {
+    .header_about_me {
+     height: 634px;
+    }
+    .about_me_title {
+        font-size: 30px;
+    }
+  }
+ 
+
+  @media (max-width: 950px) {
+    .header_about_me {
+     height: 462px;
+    }
+    .about_me_title {
+        font-size: 30px;
+    }
+  }
+ 
