@@ -9,15 +9,38 @@
   </head>
   <body>
     <!--navbar-->
-    <nav>
+    <!--navbar desktop-->
+    <nav class="navbar_desktop">
       <div class="container navbar_container">
-        <img src="./Assets/logo.svg" alt="logo" />
+      <a href="./index.html"> 
+       <img src="./Assets/logo.svg" alt="logo" /> 
+      </a> 
         <div class="navbar_link">
-          <a class="navbar_firstlink" href="/">Progetti</a>
-          <a href="/">Su di me</a>
+          <a class="navbar_firstlink" href="./Projects/index.html">Progetti</a>
+          <a href="./About_me/index.html">Su di me</a>
         </div>
       </div>
     </nav>
+
+    <!--navbar mobile-->
+    <nav class="navbar_mobile" role="navigation">
+      <div class="container_navbar_mobile">
+        <div id="menuToggle">
+    
+         <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="./Projects/index.html"><li>Progetti</li></a>
+            <a href="./About_me/index.html"><li>Su di me</li></a>
+          </ul>
+        </div>
+        <a href="./index.html"><img src="./Assets/logo.svg" alt="Logo"></a>
+      </div>
+    </nav>
+
+
 
     <!--header-->
     <!--header desktop up to 1024px-->
@@ -28,13 +51,11 @@
       </h1>
       <h2>Ciao! Sono UX|UI Designer e Psicologa</h2>
       <button>
-        <a href="/">VAI AI MIEI PROGETTI</a>
+        <a href="./Projects/index.html">VAI AI MIEI PROGETTI</a>
       </button>
     </header>
 
     
-
-    <!--header-->
     <!--header mobile-->
     <header class="header_mobile">
       <h1>
@@ -57,7 +78,8 @@
 
 
     <!--footer-->
-    <footer>
+    <!--footer desktop-->
+    <footer class="footer_desktop">
         <div class="container footer_container">
             <div class="footer_text">
                 <p>Federica Maffioletti </br> UX|UI Designer</p>
@@ -73,5 +95,32 @@
             </div>
         </div>
     </footer>
+
+    <!--footer mobile-->
+<footer class="footer_mobile">
+  <div class="footer_text_mobile">
+    <p>Federica Maffioletti </br> UX|UI Designer</p>
+</div>
+<div class="footer_text_mobile">
+    <p>federica.maffioletti93@gmail.com </br>
+    +39 3338157584</p>
+</div>
+<div>
+  <a href="https://www.linkedin.com/in/federica-maffioletti/" target="_blank">  <img class="logo_image_mobile" src="./Assets/linkedin.svg" alt="Linkedin"></a>
+  <a href="https://www.behance.net/fedemaffio" target="_blank">  <img class="logo_image_mobile behance" src="./Assets/behance.svg" alt="behance"></a>
+  <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image_mobile" src="./Assets/git.svg" alt="Git"></a>
+</div> 
+</footer>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
   </body>
 </html>
