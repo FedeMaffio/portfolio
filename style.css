@@ -362,7 +362,7 @@ footer {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .header_mobile {
     display: none;
   }
@@ -386,5 +386,19 @@ footer {
   }
   .contact_section h2 {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+  .contact_section h2 {
+    font-size: 16px;
   }
 }
