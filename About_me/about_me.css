@@ -1,6 +1,6 @@
-/*header*/
+/*header desktop*/
 
-.header_about_me{
+.header_about_me {
   background: url(../Assets/fede-su-di-me.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,8 +8,26 @@
   height: 982px;
 }
 
+/*header mobile*/
+.image_container {
+  width: 100%;
+  height: 917px;
+  background: url(../Assets/Fede_su_di_me_mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.title_about_me_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0 40px 0;
+}
+
 /*text container*/
-.about_me_title {
+h3 {
   font-weight: 500;
   font-size: 40px;
   line-height: 30px;
@@ -46,13 +64,13 @@
   height: auto;
 }
 
-/*skills section*/
+/*skills section desktop*/
 .skills_container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-right: 0;
+  margin: 0 20px 0 20px;
 }
 
 .image_skills {
@@ -62,31 +80,119 @@
 .hobby_text {
   margin-top: 140px;
 }
+.right_skill {
+  margin-bottom: 20px;
+}
+
+/*skills section mobile*/
+.skills_container_mobile {
+  margin: 0 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.skills_mobile {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.hobby {
+  height: 212px;
+  width: 212px;
+  margin-bottom: 20px;
+}
 
 /*queries*/
 
 @media (max-width: 1440px) {
   .header_about_me {
-   height: 784px;
+    height: 784px;
   }
 }
 
 @media (max-width: 1260px) {
-    .header_about_me {
-     height: 634px;
-    }
-    .about_me_title {
-        font-size: 30px;
-    }
+  .header_about_me {
+    height: 634px;
   }
- 
+  .about_me_title {
+    font-size: 30px;
+  }
+}
 
-  @media (max-width: 950px) {
-    .header_about_me {
-     height: 462px;
-    }
-    .about_me_title {
-        font-size: 30px;
-    }
+@media (min-width: 1025px) {
+  .header_about_me_mobile {
+    display: none;
   }
- 
+}
+@media (max-width: 1024px) {
+  .header_about_me {
+    display: none;
+  }
+}
+
+@media (min-width: 951px) {
+  .skills_container_mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .header_about_me {
+    height: 462px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .about_me_paragraph {
+    font-size: 18px;
+  }
+
+  .skills_container {
+    display: none;
+  }
+
+  .text_background {
+    height: 770px;
+  }
+}
+
+@media (max-width: 470px) {
+  .mobile_skill {
+    height: 180px;
+    width: 180px;
+  }
+
+  .text_background {
+    height: 820px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mobile_skill {
+    height: 150px;
+    width: 150px;
+  }
+
+  .text_background {
+    height: 900px;
+  }
+
+  .about_me_title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 340px) {
+  .mobile_skill {
+    height: 130px;
+    width: 130px;
+  }
+
+  .text_background {
+    height: 1100px;
+  }
+}

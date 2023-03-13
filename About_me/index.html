@@ -11,7 +11,7 @@
   </head>
   <body>
     <!--navbar-->
-    <nav>
+    <nav class="navbar_desktop">
       <div class="container navbar_container">
         <a href="../index.html">
           <img src="../Assets/logo.svg" alt="logo" />
@@ -23,7 +23,27 @@
       </div>
     </nav>
 
+    <!--navbar mobile-->
+    <nav class="navbar_mobile" role="navigation">
+      <div class="container_navbar_mobile">
+        <div id="menuToggle">
+    
+         <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="../Projects/index.html"><li>Progetti</li></a>
+            <a href="../About_me/index.html"><li>Su di me</li></a>
+          </ul>
+        </div>
+        <a href="../index.html"><img src="../Assets/logo.svg" alt="Logo"></a>
+      </div>
+    </nav>
+
+
     <!--header-->
+    <!--header desktop-->
     <header class="header_about_me">
         <h1>
           <span class="orange">Su di me</span>
@@ -34,10 +54,27 @@
         </button>
       </header>
 
+      <!--header mobile-->
+      <div class="header_about_me_mobile">
+        <div class="title_about_me_mobile">
+        <h1>
+          <span class="orange">Su di me</span>
+        </h1>
+        <h2>Ciao, parliamo di design!</h2>
+        <button>
+          <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
+        </button>
+        </div>
+
+        <div class="image_container">
+        </div>
+      </div>
+
+
       <!--introduction-->
     <div class="text_background">
     <div class="text_container">
-        <h3 class="about_me_title">Piacere di conoscerti e benvenut&#42; sul mio sito web!
+        <h3>Piacere di conoscerti e benvenut&#42; sul mio sito web!
         </h3>
            
         <p class="about_me_paragraph">
@@ -60,7 +97,8 @@
       <img class="graphic_wave" src="../Assets/onda-su-di-me.svg" alt="grafica onda">
     </div>
 
-    <!--skills section-->
+    <!--skills section desktop-->
+  
     <div class="skills_container">
       <div class="text_container">
         <h3 class="about_me_title">
@@ -73,13 +111,13 @@
           <img class="image_skills" src="../Assets/figma.svg" alt="Figma">
           <img class="image_skills"src="../Assets/photoshop.svg" alt="Photoshop">
           <img class="image_skills"src="../Assets/illustrator.svg" alt="Adobe Illustrator">
-          <img class="image_skills"src="../Assets/adobexd.svg" alt="Adobe XD">
+          <img class="right_skill" src="../Assets/adobexd.svg" alt="Adobe XD">
         </div>
         <div>
           <img class="image_skills"src="../Assets/indesign.svg" alt="Adobe InDesign">
           <img class="image_skills"src="../Assets/html.svg" alt="HTML">
           <img class="image_skills"src="../Assets/css.svg" alt="CSS">
-          <img class="image_skills"src="../Assets/javascript.svg" alt="Javascript">
+          <img class="right_skill"src="../Assets/javascript.svg" alt="Javascript">
         </div>
       </div>
 
@@ -93,44 +131,117 @@
         <div>
           <img class="image_skills" src="../Assets/ny.svg" alt="New York">
           <img class="image_skills" src="../Assets/parigi.svg" alt="Parigi">
-          <img class="image_skills"src="../Assets/londra.svg" alt="Londra">
+          <img class="right_skill"src="../Assets/londra.svg" alt="Londra">
         </div>
         <div>
           <img class="image_skills" src="../Assets/creamtart.svg" alt="Cream Tart">
           <img class="image_skills" src="../Assets/cheesecake.svg" alt="Cheesecake">
-          <img class="image_skills"src="../Assets/cioccolato.svg" alt="Crostata al cioccolato">
+          <img class="right_skill"src="../Assets/cioccolato.svg" alt="Crostata al cioccolato">
         </div>
       </div>
     </div>
+
+      <!--skills section mobile-->
   
+<div class="skills_container_mobile">
+  <div class="text_container">
+    <h3 class="about_me_title">
+    Cosa conosco
+    </h3>
+  </div>
+     
+  <div>
+    <div class="skills_mobile">
+      <img class="mobile_skill" src="../Assets/figma.svg" alt="Figma">
+      <img class="mobile_skill"src="../Assets/photoshop.svg" alt="Photoshop">
+    </div>
+
+    <div class="skills_mobile">
+      <img class="mobile_skill"src="../Assets/illustrator.svg" alt="Adobe Illustrator">
+      <img class="mobile_skill" src="../Assets/adobexd.svg" alt="Adobe XD">
+    </div>
+          
+    <div class="skills_mobile">
+      <img class="mobile_skill"src="../Assets/indesign.svg" alt="Adobe InDesign">
+      <img class="mobile_skill"src="../Assets/html.svg" alt="HTML">
+    </div>
+
+    <div class="skills_mobile">
+       <img class="mobile_skill "src="../Assets/css.svg" alt="CSS">
+       <img class="mobile_skill"src="../Assets/javascript.svg" alt="Javascript">
+      </div>
+  </div>
+     
   
+    <div class="text_container">
+      <h3 class="about_me_title hobby_text">
+        Cosa mi piace fare
+        </h3>
+    </div>
+     
+    <div class="skills_baby_container">
+      <div class="skills_mobile">
+          <img class="mobile_skill hobby" src="../Assets/ny.svg" alt="New York">
+          <img class="mobile_skill hobby" src="../Assets/parigi.svg" alt="Parigi">
+      </div>
+
+      <div class="skills_mobile">
+          <img class="mobile_skill hobby"src="../Assets/londra.svg" alt="Londra">
+          <img class="mobile_skill hobby" src="../Assets/creamtart.svg" alt="Cream Tart">
+      </div>
+
+      <div class="skills_mobile">
+          <img class="mobile_skill hobby" src="../Assets/cheesecake.svg" alt="Cheesecake">
+          <img class="mobile_skill hobby"src="../Assets/cioccolato.svg" alt="Crostata al cioccolato">
+      </div>
+    </div>
+</div>   
 
 
     <!--contact section-->
-<div class="contact-section_projects">
-    <h2>Mettiamoci in contatto</h2>
-    <button>
-      <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
-    </button>
+    <div class="contact-section_projects">
+      <h2>Mettiamoci in contatto</h2>
+      <button>
+        <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
+      </button>
   </div>
+  
+  
+      <!--footer-->
+      <footer class="footer_desktop">
+          <div class="container footer_container">
+              <div class="footer_text">
+                  <p>Federica Maffioletti </br> UX|UI Designer</p>
+              </div>
+              <div class="footer_text">
+                  <p>federica.maffioletti93@gmail.com </br>
+                  +39 3338157584</p>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/federica-maffioletti/" target="_blank">  <img class="logo_image" src="../Assets/linkedin.svg" alt="Linkedin"></a>
+                <a href="https://www.behance.net/fedemaffio" target="_blank">  <img class="logo_image" src="../Assets/behance.svg" alt="behance"></a>
+                <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image" src="../Assets/git.svg" alt="Git"></a>
+              </div>
+          </div>
+      </footer>
+      
+       <!--footer mobile-->
+  <footer class="footer_mobile">
+    <div class="footer_text_mobile">
+      <p>Federica Maffioletti </br> UX|UI Designer</p>
+    </div>
+    <div class="footer_text_mobile">
+      <p>federica.maffioletti93@gmail.com </br>
+      +39 3338157584</p>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/federica-maffioletti/" target="_blank">  <img class="logo_image_mobile" src="../Assets/linkedin.svg" alt="Linkedin"></a>
+      <a href="https://www.behance.net/fedemaffio" target="_blank">  <img class="logo_image_mobile behance" src="../Assets/behance.svg" alt="behance"></a>
+      <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image_mobile" src="../Assets/git.svg" alt="Git"></a>
+    </div> 
+  </footer>
 
 
-    <!--footer-->
-    <footer>
-        <div class="container footer_container">
-            <div class="footer_text">
-                <p>Federica Maffioletti </br> UX|UI Designer</p>
-            </div>
-            <div class="footer_text">
-                <p>federica.maffioletti93@gmail.com </br>
-                +39 3338157584</p>
-            </div>
-            <div>
-              <a href="https://www.linkedin.com/in/federica-maffioletti/" target="_blank">  <img class="logo_image" src="../Assets/linkedin.svg" alt="Linkedin"></a>
-              <a href="https://www.behance.net/fedemaffio" target="_blank">  <img class="logo_image" src="../Assets/behance.svg" alt="behance"></a>
-              <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image" src="../Assets/git.svg" alt="Git"></a>
-            </div>
-        </div>
-    </footer>
+
   </body>
 </html>
