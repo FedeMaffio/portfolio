@@ -6,6 +6,7 @@
   background-size: cover;
   background-position: center;
   height: 982px;
+  margin-top: 90px;
 }
 
 /*header mobile*/
@@ -95,8 +96,8 @@ h3 {
 
 .skills_mobile {
   display: flex;
-  justify-content: space-between;
-  align-self: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .hobby {
   height: 212px;
@@ -168,6 +169,10 @@ h3 {
 
   .text_background {
     height: 820px;
+  }
+
+  .image_container {
+    height: 500px;
   }
 }
 
