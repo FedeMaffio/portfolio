@@ -22,6 +22,7 @@ span {
 
 .ecodream {
   background-color: rgba(0, 63, 89, 0.8);
+  
 }
 
 .sunnee {
@@ -46,8 +47,8 @@ span {
 
 /*project section mobile*/
 .project_section_mobile {
- margin-left: 20px;
- margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +65,7 @@ span {
 }
 
 .ecodream_image_mobile {
-  width:232px;
+  width: 232px;
   height: 140px;
 }
 
@@ -74,10 +75,9 @@ span {
 }
 
 .cakeload_image_mobile {
-width: 258px;
-height: 249px;
+  width: 258px;
+  height: 249px;
 }
- 
 
 /*contact section */
 
@@ -99,94 +99,88 @@ height: 249px;
   color: #f9f9f9;
 }
 
-
-
 /*queries*/
 
-
-
 @media (min-width: 2400px) {
-    .ecodream_image {
-        width: 1024px;
-        height: 726px;
-    }
-    .sunnee_image {
-        width:854px ;
-        height: 565,34;
-    }
-    .cakeload_image {
-        width: 1016px;
-        height: 982px;
-    }
+  .ecodream_image {
+    width: 1024px;
+    height: 726px;
+  }
+  .sunnee_image {
+    width: 854px;
+    height: 565, 34;
+  }
+  .cakeload_image {
+    width: 1016px;
+    height: 982px;
+  }
 }
 
 @media (max-width: 1440px) {
-    .ecodream_image {
-      width: 502px;
-      height: 263px;
-    }
-    .sunnee_image {
-      width: 327px;
-      height: 182.67px;
-    }
-    .cakeload_image {
-      width: 408px;
-      height: 391px;
-    }
+  .ecodream_image {
+    width: 502px;
+    height: 263px;
   }
+  .sunnee_image {
+    width: 327px;
+    height: 182.67px;
+  }
+  .cakeload_image {
+    width: 408px;
+    height: 391px;
+  }
+}
 
-  @media (max-width: 1024px) {
-    .ecodream_image {
-      width: 402px;
-      height: 163px;
-    }
-    .sunnee_image {
-      width: 227px;
-      height: 82.67px;
-    }
-    .cakeload_image {
-      width: 308px;
-      height: 291px;
-    }
+@media (max-width: 1024px) {
+  .ecodream_image {
+    width: 402px;
+    height: 163px;
   }
+  .sunnee_image {
+    width: 227px;
+    height: 82.67px;
+  }
+  .cakeload_image {
+    width: 308px;
+    height: 291px;
+  }
+}
 
 @media (max-width: 600px) {
-    .ecodream_image {
-      width: 173px;
-      height: 104px;
-    }
-    .sunnee_image {
-      width: 173px;
-      height: 114px;
-    }
-    .cakeload_image {
-      width: 161px;
-      height: 155px;
-    }
- .coming_soon_title {
-        font-size: 20px;
-    }
-
-    header {
-      height: 330px;
-    }
-  } 
-
-  @media (min-width:425px) {
-    .project_section_mobile {
-      display: none;
-    }
-
+  .ecodream_image {
+    width: 173px;
+    height: 104px;
   }
-  @media (max-width:425px) {
-    .project_section_desktop {
-      display: none;
-    }
-
+  .sunnee_image {
+    width: 173px;
+    height: 114px;
+  }
+  .cakeload_image {
+    width: 161px;
+    height: 155px;
+  }
+  .coming_soon_title {
+    font-size: 20px;
   }
 
-  @media (max-width:380px) {
-    h2 {
-      font-size: 14px;
-    }
+  header {
+    height: 330px;
   }
+}
+
+@media (min-width: 425px) {
+  .project_section_mobile {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .project_section_desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  h2 {
+    font-size: 14px;
+  }
+}
