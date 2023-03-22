@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="projects.css" />
     <link rel="icon" type="image/x-icon" href="/Assets/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
  
@@ -44,7 +46,7 @@
  
  
     <!--header-->
-    <header>
+    <header class="header_projects">
       <div>
         <h1 class="header_title-short"> 
           <span>Progetti</span>
@@ -56,7 +58,7 @@
     <!--projects section desktop-->
 <div class="project_section_desktop">
   <div class="baby_container">
-    <div class="ecodream project_section"> 
+    <div data-aos="zoom-in" data-aos-duration="2000" class="ecodream project_section"> 
       <div class="project_hover blue_hover">
         <div class="project_text">Ecodream<br>Website Redesign</div>
       </div>
@@ -65,19 +67,27 @@
       </a>
     </div>
  
-    <div class="sunnee project_section">
+    <div data-aos="zoom-in" data-aos-duration="2000" class="sunnee project_section">
+      <div class="project_hover orange_hover">
+        <div class="project_text">Sunnee<br>Beachwear Branding</div>
+      </div>
       <a href="https://www.behance.net/gallery/155168237/Branding-beachwear" target="_blank">
         <img class="sunnee_image" src="../Assets/sunnee.svg" alt="Sunnee project">
       </a>
     </div>
   </div>
+
+
   <div class="baby_container">
-    <div class="cakeload project_section"> 
+    <div data-aos="zoom-in" data-aos-duration="2000" class="cakeload project_section"> 
+      <div class="project_hover red_hover">
+        <div class="project_text">Cakeload<br>Delivery App</div> 
+      </div>
       <a href="https://www.behance.net/gallery/136660001/Cakeload-UX-project" target="_blank">
         <img class="cakeload_image" src="../Assets/cakeload.svg" alt="Cakeload project">
       </a>
     </div>
-    <div class="coming_soon project_section">
+    <div data-aos="zoom-in" data-aos-duration="2000" class="coming_soon project_section">
         <h2 class="coming_soon_title">Cooming soon</h2>
     </div>
     </div>
@@ -86,28 +96,34 @@
   <!--project section mobile-->
   <div class="project_section_mobile">
  
-    <div class="ecodream project_section_item_mobile"> 
+    <div data-aos="fade-up"
+    data-aos-duration="2000" class="ecodream project_section_item_mobile"> 
       <a href="https://www.behance.net/gallery/165426551/Ecodream-Redesign" target="_blank">
         <img class="ecodream_image_mobile" src="../Assets/ecodream.svg" alt="Ecodream project">
       </a>
     </div>
-    <h2>Ecodream - Website Redesign</h2>  
+    <h3>Ecodream - Website Redesign</h3>
+    
+      
  
-    <div class="sunnee project_section_item_mobile">
+    <div data-aos="fade-up"
+    data-aos-duration="2000" class="sunnee project_section_item_mobile">
       <a href="https://www.behance.net/gallery/155168237/Branding-beachwear" target="_blank">
         <img class="sunnee_image_mobile" src="../Assets/sunnee.svg" alt="Sunnee project">
       </a>
     </div>
-    <h2>Sunnee - Beachwear Branding</h2>  
+    <h3>Sunnee - Beachwear Branding</h3>  
  
-      <div class="cakeload project_section_item_mobile"> 
+      <div  data-aos="fade-up"
+      data-aos-duration="2000" class="cakeload project_section_item_mobile"> 
         <a href="https://www.behance.net/gallery/136660001/Cakeload-UX-project" target="_blank">
           <img class="cakeload_image_mobile" src="../Assets/cakeload.svg" alt="Cakeload project">
         </a>
       </div>
-      <h2>Cakeload - Delivery App</h2>  
+      <h3>Cakeload - Delivery App</h3>  
  
-      <div class="coming_soon project_section_item_mobile">
+      <div data-aos="fade-up"
+      data-aos-duration="2000" class="coming_soon project_section_item_mobile">
           <h2 class="coming_soon_title">Cooming soon</h2>
       </div> 
  
@@ -155,5 +171,9 @@
   <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image_mobile" src="../Assets/git.svg" alt="Git"></a>
 </div> 
 </footer>
+
+<script>
+  AOS.init();
+</script>
   </body>
 </html>
