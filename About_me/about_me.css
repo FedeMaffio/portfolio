@@ -5,8 +5,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 982px;
+  height: 1300px;
   margin-top: 90px;
+}
+
+.cta_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -200px;
 }
 
 /*header mobile*/
@@ -31,7 +39,7 @@
 h3 {
   font-weight: 500;
   font-size: 40px;
-  line-height: 30px;
+  line-height: 60px;
   color: #f59e43;
   margin-bottom: 30px;
 }
@@ -41,7 +49,7 @@ h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 36px;
   color: #f9f9f9;
 }
 
@@ -52,7 +60,7 @@ h3 {
   align-items: center;
   background-color: #007a7a;
   width: 100%;
-  height: 441px;
+  height: auto;
 }
 
 .text_container {
@@ -98,6 +106,7 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5px;
 }
 .hobby {
   height: 212px;
@@ -107,9 +116,21 @@ h3 {
 
 /*queries*/
 
+@media (max-width: 1920px) {
+  .header_about_me {
+    height: 965px;
+  }
+}
+
+@media (max-width: 1650px) {
+  .header_about_me {
+    height: 820px;
+  }
+}
+
 @media (max-width: 1440px) {
   .header_about_me {
-    height: 784px;
+    height: 700px;
   }
 }
 
@@ -131,11 +152,17 @@ h3 {
   .header_about_me {
     display: none;
   }
+  .header_about_me_mobile {
+    padding-top: 76px;
+  }
 }
 
 @media (min-width: 951px) {
   .skills_container_mobile {
     display: none;
+  }
+  .image_container {
+    height: 680px;
   }
 }
 
@@ -146,6 +173,7 @@ h3 {
 
   h3 {
     font-size: 26px;
+    line-height: 39px;
   }
 
   .about_me_paragraph {
@@ -155,9 +183,14 @@ h3 {
   .skills_container {
     display: none;
   }
+}
 
-  .text_background {
-    height: 770px;
+@media (max-width: 680px) {
+  .image_container {
+    height: 330px;
+  }
+  .header_about_me_mobile {
+    padding-top: 0;
   }
 }
 
@@ -166,14 +199,6 @@ h3 {
     height: 180px;
     width: 180px;
   }
-
-  .text_background {
-    height: 820px;
-  }
-
-  .image_container {
-    height: 500px;
-  }
 }
 
 @media (max-width: 400px) {
@@ -181,11 +206,6 @@ h3 {
     height: 150px;
     width: 150px;
   }
-
-  .text_background {
-    height: 900px;
-  }
-
   .about_me_title {
     font-size: 26px;
   }
@@ -195,9 +215,5 @@ h3 {
   .mobile_skill {
     height: 130px;
     width: 130px;
-  }
-
-  .text_background {
-    height: 1100px;
   }
 }
