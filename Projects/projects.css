@@ -1,11 +1,22 @@
 /*header*/
 
 .header_projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 500px;
 }
 
 span {
   color: #f59e43;
+}
+
+.title_projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*projects section desktop*/
@@ -26,23 +37,38 @@ span {
 }
 
 .ecodream {
-  background-color: rgba(0, 63, 89, 0.8);
+  background: url(../Assets/ecodream.svg);
   margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .sunnee {
-  background-color: rgba(245, 158, 67, 0.8);
+  background: url(../Assets/sunnee.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .cakeload {
-  background-color: rgba(222, 97, 30, 0.8);
+  background: url(../Assets/cakeload.svg);
   margin-right: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .coming_soon {
-  background-color: rgba(0, 122, 122, 0.8);
+  background: url(../Assets/coming_soon.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+.coming_soon_title {
+  color: #f9f9f9;
+}
 .project_section {
   aspect-ratio: 1/1;
   width: 40.17%;
@@ -138,26 +164,6 @@ h3 {
   margin-top: 5px;
 }
 
-/*contact section */
-
-.contact-section_projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #f9f9f9;
-  width: 100%;
-  margin: 140px 0 140px 0;
-}
-
-.contact_section h2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 39px;
-  color: #f9f9f9;
-}
-
 /*queries*/
 
 @media (min-width: 2600px) {
@@ -205,6 +211,12 @@ h3 {
   }
 }
 
+@media (max-width: 670px) {
+  .header_projects {
+    height: 200px;
+  }
+}
+
 @media (max-width: 600px) {
   .ecodream_image {
     width: 173px;
@@ -221,13 +233,9 @@ h3 {
   .coming_soon_title {
     font-size: 20px;
   }
-
-  .header_projects {
-    height: 200px;
-  }
 }
 
-@media (min-width: 425px) {
+@media (min-width: 426px) {
   .entire_project_section {
     display: none;
   }
@@ -238,8 +246,11 @@ h3 {
   }
 }
 
-@media (max-width: 380px) {
-  h2 {
-    font-size: 14px;
+@media (max-width:340px) {
+  .title_projects {
+    margin: 0 10px 0 10px;
+  }
+  .subtitle {
+    text-align: center;
   }
 }
