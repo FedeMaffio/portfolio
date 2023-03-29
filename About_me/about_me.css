@@ -1,41 +1,39 @@
 /*header desktop*/
 
-.header_about_me {
-  background: url(../Assets/fede-su-di-me.svg);
+.sudime{
+  background: url(../Assets/header_sudime.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 1300px;
-  margin-top: 90px;
 }
 
-.cta_header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: -200px;
+/*header laptop*/
+
+.sudime_laptop {
+  background: url(../Assets/Header_laptop_sudime.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*header tablet */
+.sudime_tablet {
+  background: url(../Assets/Header_tablet_sudime.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 
 /*header mobile*/
-.image_container {
-  width: 100%;
-  height: 917px;
-  background: url(../Assets/Fede_su_di_me_mobile.svg);
+.sudime_mobile {
+  background: url(../Assets/Header_mobile_sudime.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: center; 
 }
 
-.title_about_me_mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 40px 0 40px 0;
-}
-
-/*text container*/
+/*introduction*/
 h3 {
   font-weight: 500;
   font-size: 40px;
@@ -61,6 +59,8 @@ h3 {
   background-color: #007a7a;
   width: 100%;
   height: auto;
+  margin: 100px 0 100px 0;
+  padding: 100px 0 100px 0;
 }
 
 .text_container {
@@ -68,9 +68,8 @@ h3 {
   text-align: left;
 }
 
-.graphic_wave {
-  width: 100%;
-  height: auto;
+.text_introduction {
+  margin-bottom: 10px;
 }
 
 /*skills section desktop*/
@@ -87,7 +86,7 @@ h3 {
 }
 
 .hobby_text {
-  margin-top: 140px;
+  margin-top: 100px;
 }
 .right_skill {
   margin-bottom: 20px;
@@ -106,12 +105,12 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .hobby {
   height: 212px;
   width: 212px;
-  margin-bottom: 20px;
+
 }
 
 /*queries*/
@@ -143,19 +142,7 @@ h3 {
   }
 }
 
-@media (min-width: 1025px) {
-  .header_about_me_mobile {
-    display: none;
-  }
-}
-@media (max-width: 1024px) {
-  .header_about_me {
-    display: none;
-  }
-  .header_about_me_mobile {
-    padding-top: 76px;
-  }
-}
+
 
 @media (min-width: 951px) {
   .skills_container_mobile {
@@ -167,17 +154,14 @@ h3 {
 }
 
 @media (max-width: 950px) {
-  .header_about_me {
-    height: 462px;
-  }
 
   h3 {
-    font-size: 26px;
-    line-height: 39px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .about_me_paragraph {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .skills_container {
@@ -185,14 +169,6 @@ h3 {
   }
 }
 
-@media (max-width: 680px) {
-  .image_container {
-    height: 330px;
-  }
-  .header_about_me_mobile {
-    padding-top: 0;
-  }
-}
 
 @media (max-width: 470px) {
   .mobile_skill {
