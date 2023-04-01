@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,11 +11,17 @@
     <link rel="icon" type="image/x-icon" href="/Assets/favicon.ico">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="../index.js"></script>
   </head>
   <body>
  
     <!--navbar-->
-    <nav class="navbar_desktop">
+    <nav class="navbar_desktop nav_background">
       <div class="container navbar_container">
         <a href="../index.html">
           <img class="logo" src="../Assets/logo.svg" alt="logo" />
@@ -50,10 +56,10 @@
     <header class="header_projects">
       <div>
         <div class="title_projects">
-         <h1 class="header_title">
+         <h1 class="header_title" data-aos="zoom-in" data-aos-duration="1000">
             <span class="orange">Progetti</span>
             </h1>
-            <h2 class="subtitle">Il mio design migliore sarà il prossimo &#128521;</h2>
+            <h2 class="subtitle" data-aos="fade-up" data-aos-duration="1000">Il mio design migliore sarà il prossimo &#128521;</h2>
     
         </div>
      </div>
@@ -62,33 +68,21 @@
     <!--projects section desktop-->
     <div class="project_section_desktop">
     <div class="baby_container">
-      <div data-aos="zoom-in" data-aos-duration="2000" class="ecodream project_section"> 
-        <div class="project_hover blue_hover">
-          <div class="project_text">Ecodream<br>Website Redesign</div>
+        <div data-aos="zoom-in" data-aos-duration="2000" class="ecodream project_section" onclick="window.open('https://www.behance.net/gallery/165426551/Ecodream-Redesign', '_blank')"> 
+          <h3>Ecodream - Website Redesign</h3>
         </div>
-        <a href="https://www.behance.net/gallery/165426551/Ecodream-Redesign" target="_blank">
-        </a>
-      </div>
   
-      <div data-aos="zoom-in" data-aos-duration="2000" class="sunnee project_section">
-        <div class="project_hover orange_hover">
-          <div class="project_text">Sunnee<br>Beachwear Branding</div>
-        </div>
-        <a href="https://www.behance.net/gallery/155168237/Branding-beachwear" target="_blank">
-        </a>
+      <div data-aos="zoom-in" data-aos-duration="2000" class="sunnee project_section" onclick="window.open('https://www.behance.net/gallery/155168237/Branding-beachwear', '_blank')">
+        <h3>Sunnee - Beachwear Branding</h3>
       </div>
     </div>
 
 
     <div class="baby_container">
-      <div data-aos="zoom-in" data-aos-duration="2000" class="cakeload project_section"> 
-        <div class="project_hover red_hover">
-          <div class="project_text">Cakeload<br>Delivery App</div> 
-        </div>
-        <a href="https://www.behance.net/gallery/136660001/Cakeload-UX-project" target="_blank">
-          
-        </a>
+      <div data-aos="zoom-in" data-aos-duration="2000" class="cakeload project_section" onclick="window.open('https://www.behance.net/gallery/136660001/Cakeload-UX-project', '_blank')">
+        <h3>Cakeload - Delivery App</h3>
       </div>
+
       <div data-aos="zoom-in" data-aos-duration="2000" class="coming_soon project_section">
           <h2 class="coming_soon_title">Cooming soon</h2>
       </div>
@@ -141,7 +135,7 @@
  
  
      <!--contact section-->
-     <div class="contact_section">
+     <div class="contact_section margine">
       <h2>Mettiamoci in contatto</h2>
       <button>
         <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
@@ -185,5 +179,6 @@
     <script>
       AOS.init();
     </script>
+
   </body>
 </html>

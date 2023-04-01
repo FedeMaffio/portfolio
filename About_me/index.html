@@ -12,11 +12,17 @@
     <link rel="icon" type="image/x-icon" href="/Assets/favicon.ico">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous">
+    </script>
+     <script type="text/javascript" src="../index.js"></script>
   </head>
   <body>
 
     <!--navbar-->
-    <nav class="navbar_desktop">
+    <nav class="navbar_desktop nav_background">
       <div class="container navbar_container">
         <a href="../index.html">
           <img class="logo" src="../Assets/logo.svg" alt="logo" />
@@ -45,66 +51,41 @@
         <a href="../index.html"><img src="../Assets/logo.svg" alt="Logo"></a>
       </div>
     </nav>
+
+  <!--header desktop-->
+  <header class="header_desktop">  
+    <div class="text_header">
+      <h1 class="header_title" data-aos="zoom-in" data-aos-duration="1000">
+        <span class="cyan">Su di me</span>
+      </h1>
+      <h2 data-aos="fade-up" data-aos-duration="1000">Ciao, parliamo di design!</h2>
+      <button data-aos="fade-up" data-aos-duration="1000">
+        <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
+      </button>
+    </div>
+
+    <div> <img class="img_header" src="../Assets/fede_ottagono.svg" alt="Federica Maffioletti"></div>
+    </div>
+  </header>
+
+  <!--header mobile-->
+  <header class="header_mobile">  
+    <div class="text_header_mobile">
+      <h1 class="header_title"data-aos="zoom-in" data-aos-duration="1000">
+        <span class="cyan">Su di me</span>
+      </h1>
+      <h2 data-aos="fade-up" data-aos-duration="1000">Ciao, parliamo di design!</h2>
+      <button data-aos="fade-up" data-aos-duration="1000">
+        <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
+      </button>
+    </div>
+
+    <div> <img class="img_mobile" src="../Assets/fede_ottagono.svg" alt="Federica Maffioletti"></div>
+    </div>
+  </header>
  
- 
-    <!--header-->
-    <!--header desktop-->
   
-      <header class="header_desktop sudime">  
-        <div class="text_header">
-          <h1 class="header_title">
-            <span class="cyan">Su di me</span>
-          </h1>
-          <h2>Ciao, parliamo di design!</h2>
-          <button>
-            <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
-          </button>
-        </div>
-      </header>
 
-      <!--header laptop-->
-      <header class="header_laptop sudime_laptop">  
-        <div class="text_header">
-          <h1 class="header_title">
-            <span class="cyan">Su di me</span>
-          </h1>
-          <h2>Ciao, parliamo di design!</h2>
-          <button>
-            <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
-          </button>
-        </div>
-      </header>
-
-      <!--header tablet-->
-    <header class="header_tablet sudime_tablet">
-      <div>
-        <div class="text_header">
-          <h1 class="header_title">
-            <span class="cyan">Su di me</span>
-          </h1>
-           <h2>Ciao, parliamo di design!</h2>
-        <button>
-          <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
-        </button>
-      </div>
-    </header>
-   
- 
-      <!--header mobile-->
-    <header class="header_mobile sudime_mobile">
-      <div>
-        <div class="text_header_mobile">
-          <h1 class="header_title">
-            <span class="cyan">Su di me</span>
-          </h1>
-           <h2>Ciao, parliamo di design!</h2>
-        <button>
-          <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
-        </button>
-      </div>
-    </header
- 
- 
       <!--introduction-->
       <div class="text_background">
       <div class="text_container">
@@ -287,7 +268,7 @@
  
  
  <!--contact section-->
- <div class="contact_section">
+ <div class="contact_section margine">
   <h2>Mettiamoci in contatto</h2>
   <button>
     <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
@@ -329,7 +310,7 @@
       <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image_mobile" src="../Assets/git.svg" alt="Git"></a>
     </div> 
     </footer>
- 
+
     <script>
       AOS.init();
     </script>
