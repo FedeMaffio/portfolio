@@ -9,6 +9,13 @@
 
 /*header laptop*/
 
+.sudime_large {
+  background: url(../Assets/header_laptoplarge_sudime.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .sudime_laptop {
   background: url(../Assets/Header_laptop_sudime.svg);
   background-repeat: no-repeat;
@@ -59,7 +66,7 @@ h3 {
   background-color: #007a7a;
   width: 100%;
   height: auto;
-  margin: 100px 0 100px 0;
+  margin: 0 0 100px 0;
   padding: 100px 0 100px 0;
 }
 

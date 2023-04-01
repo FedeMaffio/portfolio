@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,11 +8,20 @@
     <title>Federica Maffioletti | UX UI Designer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/Assets/favicon.ico">
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous">
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script type="text/javascript" src="./index.js"></script>
+
   </head>
   <body>
     <!--navbar-->
     <!--navbar desktop-->
-    <nav class="navbar_desktop">
+    <nav class="navbar_desktop nav_background">
       <div class="container navbar_container">
       <a href="./index.html"> 
        <img class="logo"  src="./Assets/logo.svg" alt="logo" /> 
@@ -25,11 +34,12 @@
     </nav>
  
     <!--navbar mobile-->
-    <nav class="navbar_mobile" role="navigation">
+   <nav class="navbar_mobile" role="navigation">
       <div class="container_navbar_mobile">
+       
         <div id="menuToggle">
  
-         <input type="checkbox" />
+         <input type="checkbox" class="hamburger" onclick="disableScroll()" />
           <span></span>
           <span></span>
           <span></span>
@@ -38,75 +48,55 @@
             <a href="./About_me/index.html"><li>Su di me</li></a>
           </ul>
         </div>
-        <a href="./index.html"><img src="./Assets/logo.svg" alt="Logo"></a>
+        <div> 
+          <a href="./index.html"><img src="./Assets/logo.svg" alt="Logo"></a>
+        </div>
       </div>
     </nav>
- 
- 
- 
-    <!--header-->
-    <!--header desktop--->
-    <header class="header_desktop">
-      <div>
-        <div class="text_header">
-         <h1 class="header_title">
-            <span class="orange">Federica</span>
-            <span class="cyan">Maffioletti</span>
-            </h1>
-            <h2>Ciao! Sono UX|UI Designer e Psicologa</h2>
-            <button>
-              <a href="./Projects/index.html">VAI AI MIEI PROGETTI</a>
-            </button>
-        </div>
-     </div>
-    </header>
 
-    <!--header laptop-->
-    <header class="header_laptop">
-      <div>
-        <div class="text_header">
-         <h1 class="header_title">
-            <span class="orange">Federica</span>
-            <span class="cyan">Maffioletti</span>
-            </h1>
-            <h2>Ciao! Sono UX|UI Designer e Psicologa</h2>
-            <button>
-              <a href="./Projects/index.html">VAI AI MIEI PROGETTI</a>
-            </button>
-        </div>
-     </div>
-    </header>
+    
 
-    <!--header tablet-->
-    <header class="header_tablet">
-      <div>
-        <div class="text_header">
-          <h1 class="header_title">
-            <span class="orange">Federica</span>
-            <span class="cyan">Maffioletti</span>
-          </h1>
-           <h2>Ciao! Sono UX|UI Designer e Psicologa</h2>
-        <button>
+ 
+ 
+ 
+    
+
+    <!--header desktop-->
+  <header class="header_desktop">  
+    <div class="text_header home_text">
+      <h1 class="header_title" data-aos="zoom-in" data-aos-duration="1000">
+        <span class="orange">Federica</span>
+        <span class="cyan">Maffioletti</span>
+        </h1>
+        <h2 data-aos="fade-up" data-aos-duration="1000">Ciao! Sono UX|UI Designer e Psicologa</h2>
+        <button data-aos="fade-up" data-aos-duration="1000">
           <a href="./Projects/index.html">VAI AI MIEI PROGETTI</a>
         </button>
-      </div>
-    </header>
- 
- 
-    <!--header mobile-->
-    <header class="header_mobile">
-      <div>
-        <div class="text_header_mobile">
-          <h1 class="header_title">
-            <span class="orange">Federica</span>
-            <span class="cyan">Maffioletti</span>
-          </h1>
-           <h2>Ciao! Sono UX|UI Designer e Psicologa</h2>
-        <button>
+
+    </div>
+
+    <div> 
+      <img class="img_header home_image" src="./Assets/foto_home.svg" alt="Federica Maffioletti">
+    </div>
+  </header>
+
+  <!--header mobile-->
+  <header class="header_mobile">  
+    <div class="text_header_mobile">
+      <h1 class="header_title" data-aos="zoom-in" data-aos-duration="1000">
+        <span class="orange">Federica</span>
+        <span class="cyan">Maffioletti</span>
+        </h1>
+        <h2 data-aos="fade-up" data-aos-duration="1000">Ciao! Sono UX|UI Designer e Psicologa</h2>
+        <button data-aos="fade-up" data-aos-duration="1000">
           <a href="./Projects/index.html">VAI AI MIEI PROGETTI</a>
         </button>
-      </div>
-    </header>
+    </div>
+    </div>
+
+    <div> <img class="img_mobile" src="./Assets/foto_home.svg" alt="Federica Maffioletti">
+    </div>
+  </header>
   
  
     <!--contact section-->
@@ -152,6 +142,11 @@
       <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image_mobile" src="./Assets/git.svg" alt="Git"></a>
     </div> 
     </footer>
+
+
+    <script>
+      AOS.init();
+    </script>
  
   </body>
 </html>

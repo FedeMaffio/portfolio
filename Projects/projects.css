@@ -42,6 +42,31 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  cursor:pointer;
+  transition:all 0.3s!important;
+  padding:0 20px;
+}
+
+.ecodream h3{
+  color:#f9f9f9;
+  font-size:22px;
+  display:none;
+  text-align:center;
+  transition:all 0.3s!important;
+}
+
+.ecodream:hover{
+  background: url(../Assets/hover_ecodream.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.ecodream:hover h3{
+  display:unset;
 }
 
 .sunnee {
@@ -49,6 +74,31 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: all 0.3s!important;
+  cursor:pointer;
+}
+
+.sunnee h3{
+  color:#f9f9f9;
+  font-size:22px;
+  display:none;
+  text-align:center;
+  transition:all 0.3s!important;
+}
+
+
+.sunnee:hover{
+  background: url(../Assets/hover_sunnee.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.sunnee:hover h3{
+  display:unset;
 }
 
 .cakeload {
@@ -57,6 +107,30 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  transition: all 0.3s !important;
+  cursor:pointer;
+}
+
+.cakeload:hover{
+  background: url(../Assets/hover_cakeload.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.cakeload h3{
+  color:#f9f9f9;
+  font-size:22px;
+  display:none;
+  text-align:center;
+  transition:all 0.3s!important;
+}
+
+.cakeload:hover h3{
+  display:unset;
 }
 
 .coming_soon {
@@ -164,50 +238,23 @@ h3 {
   margin-top: 5px;
 }
 
+/*footer*/
+.margine {
+  margin-top: 100px;
+}
+
 /*queries*/
 
-@media (min-width: 2600px) {
-  .ecodream_image {
-    width: 1024px;
-    height: 726px;
-  }
-  .sunnee_image {
-    width: 854px;
-    height: 565, 34;
-  }
-  .cakeload_image {
-    width: 1016px;
-    height: 982px;
+@media(min-width:601px){
+  .entire_project_section{
+    display:none;
   }
 }
 
-@media (max-width: 1440px) {
-  .ecodream_image {
-    width: 502px;
-    height: 263px;
-  }
-  .sunnee_image {
-    width: 327px;
-    height: 182.67px;
-  }
-  .cakeload_image {
-    width: 408px;
-    height: 391px;
-  }
-}
 
-@media (max-width: 1024px) {
-  .ecodream_image {
-    width: 402px;
-    height: 163px;
-  }
-  .sunnee_image {
-    width: 227px;
-    height: 82.67px;
-  }
-  .cakeload_image {
-    width: 308px;
-    height: 291px;
+@media(max-width:950px){
+  .ecodream h3{
+    font-size:18px;
   }
 }
 
@@ -233,14 +280,9 @@ h3 {
   .coming_soon_title {
     font-size: 20px;
   }
-}
-
-@media (min-width: 426px) {
-  .entire_project_section {
-    display: none;
+  .subtitle{
+    text-align:center;
   }
-}
-@media (max-width: 425px) {
   .project_section_desktop {
     display: none;
   }
