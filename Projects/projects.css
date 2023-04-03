@@ -42,31 +42,31 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  cursor:pointer;
-  transition:all 0.3s!important;
-  padding:0 20px;
+  cursor: pointer;
+  transition: all 0.3s !important;
+  padding: 0 20px;
 }
 
-.ecodream h3{
-  color:#f9f9f9;
-  font-size:22px;
-  display:none;
-  text-align:center;
-  transition:all 0.3s!important;
+.ecodream h3 {
+  color: #f9f9f9;
+  font-size: 22px;
+  display: none;
+  text-align: center;
+  transition: all 0.3s !important;
 }
 
-.ecodream:hover{
+.ecodream:hover {
   background: url(../Assets/hover_ecodream.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ecodream:hover h3{
-  display:unset;
+.ecodream:hover h3 {
+  display: unset;
 }
 
 .sunnee {
@@ -74,31 +74,30 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: all 0.3s!important;
-  cursor:pointer;
+  transition: all 0.3s !important;
+  cursor: pointer;
 }
 
-.sunnee h3{
-  color:#f9f9f9;
-  font-size:22px;
-  display:none;
-  text-align:center;
-  transition:all 0.3s!important;
+.sunnee h3 {
+  color: #f9f9f9;
+  font-size: 22px;
+  display: none;
+  text-align: center;
+  transition: all 0.3s !important;
 }
 
-
-.sunnee:hover{
+.sunnee:hover {
   background: url(../Assets/hover_sunnee.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sunnee:hover h3{
-  display:unset;
+.sunnee:hover h3 {
+  display: unset;
 }
 
 .cakeload {
@@ -108,29 +107,29 @@ span {
   background-size: cover;
   background-position: center;
   transition: all 0.3s !important;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.cakeload:hover{
+.cakeload:hover {
   background: url(../Assets/hover_cakeload.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cakeload h3{
-  color:#f9f9f9;
-  font-size:22px;
-  display:none;
-  text-align:center;
-  transition:all 0.3s!important;
+.cakeload h3 {
+  color: #f9f9f9;
+  font-size: 22px;
+  display: none;
+  text-align: center;
+  transition: all 0.3s !important;
 }
 
-.cakeload:hover h3{
-  display:unset;
+.cakeload:hover h3 {
+  display: unset;
 }
 
 .coming_soon {
@@ -217,21 +216,6 @@ span {
   margin-right: 0;
 }
 
-.ecodream_image_mobile {
-  width: 232px;
-  height: 140px;
-}
-
-.sunnee_image_mobile {
-  width: 232px;
-  height: 153px;
-}
-
-.cakeload_image_mobile {
-  width: 258px;
-  height: 249px;
-}
-
 h3 {
   font-size: 16px;
   color: #003f59;
@@ -245,16 +229,15 @@ h3 {
 
 /*queries*/
 
-@media(min-width:601px){
-  .entire_project_section{
-    display:none;
+@media (min-width: 601px) {
+  .entire_project_section {
+    display: none;
   }
 }
 
-
-@media(max-width:950px){
-  .ecodream h3{
-    font-size:18px;
+@media (max-width: 950px) {
+  .ecodream h3 {
+    font-size: 18px;
   }
 }
 
@@ -265,30 +248,18 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .ecodream_image {
-    width: 173px;
-    height: 104px;
-  }
-  .sunnee_image {
-    width: 173px;
-    height: 114px;
-  }
-  .cakeload_image {
-    width: 161px;
-    height: 155px;
-  }
   .coming_soon_title {
     font-size: 20px;
   }
-  .subtitle{
-    text-align:center;
+  .subtitle {
+    text-align: center;
   }
   .project_section_desktop {
     display: none;
   }
 }
 
-@media (max-width:340px) {
+@media (max-width: 340px) {
   .title_projects {
     margin: 0 10px 0 10px;
   }
