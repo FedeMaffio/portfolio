@@ -36,7 +36,7 @@ span {
   margin-bottom: 20px;
 }
 
-.ecodream {
+.ecodream, .ecodream-mobile {
   background: url(../Assets/ecodream.svg);
   margin-right: 20px;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@ span {
   display: unset;
 }
 
-.sunnee {
+.sunnee, .sunnee-mobile {
   background: url(../Assets/sunnee.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,7 +100,7 @@ span {
   display: unset;
 }
 
-.cakeload {
+.cakeload, .cakeload-mobile {
   background: url(../Assets/cakeload.svg);
   margin-right: 20px;
   background-repeat: no-repeat;
