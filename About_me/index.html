@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="./about_me.css" />
     <link rel="icon" type="image/x-icon" href="/Assets/favicon.ico">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
       integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
       crossorigin="anonymous">
     </script>
-     <script type="text/javascript" src="../index.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>    
+    <script type="text/javascript" src="./index.js"></script>
   </head>
   <body>
 
-    <!--navbar-->
+    <!--navbar desktop-->
     <nav class="navbar_desktop nav_background">
       <div class="container navbar_container">
-        <a href="../index.html">
-          <img class="logo" src="../Assets/logo.svg" alt="logo" />
-        </a> 
+          <a href="../index.html">
+            <img class="logo" src="../Assets/logo.svg" alt="logo" />
+          </a> 
         <div class="navbar_link">
           <a class="navbar_firstlink" href="../Projects/index.html">Progetti</a>
           <a href="../About_me/index.html">Su di me</a>
@@ -37,9 +38,8 @@
     <!--navbar mobile-->
     <nav class="navbar_mobile" role="navigation">
       <div class="container_navbar_mobile">
-        <div id="menuToggle">
- 
-         <input type="checkbox" />
+         <div id="menuToggle">
+          <input type="checkbox" class="hamburger" onclick="disableScroll()" />
           <span></span>
           <span></span>
           <span></span>
@@ -48,7 +48,9 @@
             <a href="../About_me/index.html"><li>Su di me</li></a>
           </ul>
         </div>
-        <a href="../index.html"><img src="../Assets/logo.svg" alt="Logo"></a>
+        <div> 
+          <a href="./index.html"><img src="../Assets/logo.svg" alt="Logo"></a>
+        </div>
       </div>
     </nav>
 
@@ -86,27 +88,27 @@
  
   
 
-      <!--introduction-->
-      <div class="text_background">
-      <div class="text_container">
-          <h3>Piacere di conoscerti e benvenut&#42; sul mio portfolio!
-          </h3>
+  <!--introduction-->
+  <div class="text_background">
+    <div class="text_container">
+      <h3>Piacere di conoscerti e benvenut&#42; sul mio portfolio!
+      </h3>
   
-          <div data-aos="fade-up"
+      <div data-aos="fade-up"
           data-aos-duration="3000" class="about_me_paragraph">
-            <p class="text_introduction">Sono Federica, <strong>UX/UI Designer</strong> e psicologa.
-            <br></p>
-            <p class="text_introduction">Sono laureata in psicologia clinica e ho deciso di cambiare la mia vita e avvicinarmi al design quando ho realizzato che stare vicino alla sofferenza altrui non faceva per me.
-            <br></p>
-            In qualità di UX/UI Designer e psicologa, il mio obiettivo è di utilizzare le mie conoscenze del comportamento umano e dei processi cognitivi per creare esperienze digitali significative che migliorino la vita delle persone. 
-            <br> 
-            <p class="text_introduction"> alla mia formazione interdisciplinare, mi dedico alla <strong>user research</strong>, allo <strong>Human Centered Design</strong>, all'<strong>accessibilità</strong> e alla <strong>UI</strong> per creare interfacce intuitive, coinvolgenti, inclusive e accattivanti. 
-            <br></p>
-            <p>Ho disegnato e sviluppato queste pagine da sola: troverai esempi di progetti di design, dall'ideazione all'implementazione, nei quali ho fornito soluzioni efficaci che soddisfino sia gli obiettivi aziendali che le esigenze degli utenti. Se ti va lasciami pure un feedback, lo apprezzerei molto! &#128640;
-            </p>
-            </div>
-        </div>  
+        <p class="text_introduction">Sono Federica, <strong>UX/UI Designer</strong> e psicologa.
+        <br></p>
+        <p class="text_introduction">Sono laureata in psicologia clinica e ho deciso di cambiare la mia vita e avvicinarmi al design quando ho realizzato che stare vicino alla sofferenza altrui non faceva per me.
+        <br></p>
+        In qualità di UX/UI Designer e psicologa, il mio obiettivo è di utilizzare le mie conoscenze del comportamento umano e dei processi cognitivi per creare esperienze digitali significative che migliorino la vita delle persone. 
+        <br> 
+        <p class="text_introduction"> alla mia formazione interdisciplinare, mi dedico alla <strong>user research</strong>, allo <strong>Human Centered Design</strong>, all'<strong>accessibilità</strong> e alla <strong>UI</strong> per creare interfacce intuitive, coinvolgenti, inclusive e accattivanti. 
+        <br></p>
+        <p>Ho disegnato e sviluppato queste pagine da sola: troverai esempi di progetti di design, dall'ideazione all'implementazione, nei quali ho fornito soluzioni efficaci che soddisfino sia gli obiettivi aziendali che le esigenze degli utenti. Se ti va lasciami pure un feedback, lo apprezzerei molto! &#128640;
+        </p>
       </div>
+    </div>  
+  </div>
  
     
  
@@ -269,47 +271,47 @@
  
  <!--contact section-->
  <div class="contact_section margine">
-  <h2>Mettiamoci in contatto</h2>
-  <button>
-    <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
-  </button>
-</div>
+    <h2>Mettiamoci in contatto</h2>
+    <button>
+      <a href="mailto:federica.maffioletti93@gmail.com?subject=Richiesta di contatto">SCRIVIMI</a>
+    </button>
+  </div>
 
  
  
-    <!--footer-->
-    <footer class="footer_desktop">
-        <div class="container footer_container">
-            <div class="footer_text">
-                <p>Federica Maffioletti </br> UX|UI Designer</p>
-            </div>
-            <div class="footer_text">
-                <p>federica.maffioletti93@gmail.com </br>
-                +39 3338157584</p>
-            </div>
-            <div>
-              <a class="hvr-bob" href="https://www.linkedin.com/in/federica-maffioletti/" target="_blank">  <img class="logo_image" src="../Assets/linkedin.svg" alt="Linkedin"></a>
-              <a class="hvr-bob" href="https://www.behance.net/fedemaffio" target="_blank">  <img class="logo_image" src="../Assets/behance.svg" alt="behance"></a>
-              <a class="hvr-bob" href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image" src="../Assets/git.svg" alt="Git"></a>
-            </div>
-        </div>
-    </footer>
- 
-     <!--footer mobile-->
-     <footer class="footer_mobile">
-      <div class="footer_text_mobile name">
+  <!--footer desktop-->
+  <footer class="footer_desktop">
+    <div class="container footer_container">
+      <div class="footer_text">
         <p>Federica Maffioletti </br> UX|UI Designer</p>
+      </div>
+      <div class="footer_text">
+          <p>federica.maffioletti93@gmail.com </br>
+              +39 3338157584</p>
+      </div>
+      <div>
+        <a class="hvr-bob" href="https://www.linkedin.com/in/federica-maffioletti/" target="_blank">  <img class="logo_image" src="../Assets/linkedin.svg" alt="Linkedin"></a>
+        <a class="hvr-bob" href="https://www.behance.net/fedemaffio" target="_blank">  <img class="logo_image" src="../Assets/behance.svg" alt="behance"></a>
+        <a class="hvr-bob" href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image" src="../Assets/git.svg" alt="Git"></a>
+      </div>
+    </div>
+  </footer>
+ 
+  <!--footer mobile-->
+  <footer class="footer_mobile">
+    <div class="footer_text_mobile name">
+      <p>Federica Maffioletti </br> UX|UI Designer</p>
     </div>
     <div class="footer_text_mobile mail">
-        <p>federica.maffioletti93@gmail.com </br>
-        +39 3338157584</p>
+      <p>federica.maffioletti93@gmail.com </br>
+      +39 3338157584</p>
     </div>
     <div>
       <a href="https://www.linkedin.com/in/federica-maffioletti/" target="_blank">  <img class="logo_image_mobile" src="../Assets/linkedin.svg" alt="Linkedin"></a>
       <a href="https://www.behance.net/fedemaffio" target="_blank">  <img class="logo_image_mobile behance" src="../Assets/behance.svg" alt="behance"></a>
       <a href="https://github.com/FedeMaffio" target="_blank"> <img class="logo_image_mobile" src="../Assets/git.svg" alt="Git"></a>
     </div> 
-    </footer>
+  </footer>
 
     <script>
       AOS.init();

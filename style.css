@@ -26,12 +26,11 @@ h2 {
 .navbar_desktop {
   opacity: 10;
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 100;
 }
-
 
 .container {
   width: 94.4%;
@@ -96,8 +95,6 @@ h2 {
   width: 32px;
   height: 32px;
   position: absolute;
-  /*top: 22px;
-  left: 40px;*/
   cursor: pointer;
   opacity: 0;
   z-index: 2;
@@ -152,12 +149,12 @@ h2 {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate( 0 , -100% );
+  transform: translate(0, -100%);
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   display: flex;
   align-items: center;
   flex-direction: column;
-  right:0;
+  right: 0;
 }
 
 #menu li {
@@ -170,8 +167,8 @@ h2 {
   color: #003f59;
 }
 
-.no-scroll{
-  overflow-y:hidden;
+.no-scroll {
+  overflow-y: hidden;
 }
 
 #menuToggle input:checked ~ ul {
@@ -191,10 +188,10 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction:row-reverse;
+  flex-direction: row-reverse;
 }
 
-/*header*/
+/*header desktop*/
 
 header {
   position: relative;
@@ -202,9 +199,6 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  height: 700px;
-}
-.header_mobile {
   height: 700px;
 }
 
@@ -215,30 +209,12 @@ header {
   z-index: -1;
 }
 
-.img_mobile {
-  margin: 50px 0 50px 0;
-}
-
 .text_header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: -150px;
-}
-
-.header_mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.text_header_mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 h1 {
@@ -252,7 +228,7 @@ h1 {
 .header_title {
   overflow: hidden;
   white-space: nowrap;
-  width:fit-content;
+  width: fit-content;
 }
 
 .header_title-short {
@@ -300,7 +276,29 @@ button:hover {
   background: #de611e;
 }
 
+/*header mobile */
+
+.header_mobile {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img_mobile {
+  margin: 50px 0 50px 0;
+}
+
+.text_header_mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /*contact section*/
+
 .contact_section {
   display: flex;
   justify-content: center;
@@ -393,11 +391,11 @@ footer {
 
 .hvr-bob {
   display: inline-block;
-  /* vertical-align: middle; */
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .hvr-bob:hover,
 .hvr-bob:focus,
 .hvr-bob:active {
@@ -600,13 +598,3 @@ footer {
     font-size: 16px;
   }
 }
-
-@media (min-width: 426px) {
-}
-
-
-
-
-
-
-
