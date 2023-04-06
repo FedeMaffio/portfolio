@@ -1,45 +1,3 @@
-/*header desktop*/
-
-.sudime{
-  background: url(../Assets/header_sudime.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/*header laptop*/
-
-.sudime_large {
-  background: url(../Assets/header_laptoplarge_sudime.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.sudime_laptop {
-  background: url(../Assets/Header_laptop_sudime.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/*header tablet */
-.sudime_tablet {
-  background: url(../Assets/Header_tablet_sudime.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-}
-
-/*header mobile*/
-.sudime_mobile {
-  background: url(../Assets/Header_mobile_sudime.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; 
-}
-
 /*introduction*/
 h3 {
   font-weight: 500;
@@ -80,6 +38,7 @@ h3 {
 }
 
 /*skills section desktop*/
+
 .skills_container {
   display: flex;
   justify-content: center;
@@ -100,6 +59,7 @@ h3 {
 }
 
 /*skills section mobile*/
+
 .skills_container_mobile {
   margin: 0 20px 0 20px;
   display: flex;
@@ -117,39 +77,15 @@ h3 {
 .hobby {
   height: 212px;
   width: 212px;
-
 }
 
 /*queries*/
 
-@media (max-width: 1920px) {
-  .header_about_me {
-    height: 965px;
-  }
-}
-
-@media (max-width: 1650px) {
-  .header_about_me {
-    height: 820px;
-  }
-}
-
-@media (max-width: 1440px) {
-  .header_about_me {
-    height: 700px;
-  }
-}
-
 @media (max-width: 1260px) {
-  .header_about_me {
-    height: 634px;
-  }
   .about_me_title {
     font-size: 30px;
   }
 }
-
-
 
 @media (min-width: 951px) {
   .skills_container_mobile {
@@ -161,7 +97,6 @@ h3 {
 }
 
 @media (max-width: 950px) {
-
   h3 {
     font-size: 24px;
     line-height: 36px;
@@ -175,7 +110,6 @@ h3 {
     display: none;
   }
 }
-
 
 @media (max-width: 470px) {
   .mobile_skill {
